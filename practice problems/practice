@@ -1,0 +1,10 @@
+<php
+
+
+function split_values(){
+	echo split_values;
+
+}
+split_values(1,2,1,1,1));
+?>
+

@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Jquery Excercise</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script type="text/javascript">
+
+		//run the function when doc is loaded
+		$(document).ready(function(){
+
+				
+				$('h1').click(function(){
+					$('#special').fadeOut();		
+				});
+				$('h2').click(function(){
+					$('#special').fadeIn();
+				});
+
+		});
+	</script>
+
+	
+</head>
+<body>
+
+
+<h1> Main Heading</h1>
+<p> This is a Paragraph</p>
+
+<h2>Second Heading</h2>
+<p id="special"> second paragraph</p>
+
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<html>
+<head>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title id='title'>HTML Page setup Tutorial</title>
+        <link rel="stylesheet" type="text/css" href="css.css">
+ 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	<script type="text/javascript" src="/js/jquery.jplayer.min.js"></script>
+
+s
+
+	<script type="text/javascript">
+	$(document).ready(function()
+	{
+			
+
+		  $("#press").click(function(){
+  			
+
+  			if($("body").attr("id") == 'tree')
+  			{
+  				$('body').attr("id",'bird').fadeIn( "slow", function() {
+    // Animation complete
+  });
+  			}
+  			else
+  			{
+  				$('body').attr("id",'tree');
+  			}
+
+  			});
+
+		
+       
+
+		$("#sudokuboard").hide();
+		$(".largesection").hide();
+
+		$("#sudokuboard").fadeIn( 1000, function() {
+  		  // Animation complete
+  		});    
+		$(".largesection").fadeIn( 3000, function() {
+   		 // Animation complete
+ 		 });
+	      		$('.smallsection').click(function(){
+	      	 //  alert("click works!");
+	        	$( this ).effect("highlight",1000) ;
+
+   			});
+	
+	var c =0;
+	var timer_on = true;
+
+	function displayCount() 
+	{
+		// alert("timing");
+		console.log(c);
+
+	      $('#timer').append(c);
+	}
+
+	function count() {
+	    if(timer_on) 
+	    {
+	        c=c+1;
+	         $('#timer').html(" ");
+	        displayCount();
+	    }
+	}
+	var interval = setInterval(count,1000);
+
+
+      $("#jquery_jplayer_1").jPlayer({
+        ready: function() {
+          $(this).jPlayer("setMedia", {
+            mp3: "https://dl-web.dropbox.com/get/Public/Music%20Zen%20Garden.mp3?w=AADFd6IXiQm8udbdkcEfzwgdZPGD7ARv875Ub2kW9WL3dQ"
+          }).jPlayer("play");
+          var click = document.ontouchstart === undefined ? 'click' : 'touchstart';
+          var kickoff = function () {
+            $("#jquery_jplayer_1").jPlayer("play");
+            document.documentElement.removeEventListener(click, kickoff, true);
+          };
+          document.documentElement.addEventListener(click, kickoff, true);
+        },
+        loop: true,
+        swfPath: "/js"
+      });
+
+});
+
+
+
+
+   
+      $("#jquery_jplayer_1").jPlayer({
+        ready: function() {
+          $(this).jPlayer("setMedia", {
+            mp3: "https://dl-web.dropbox.com/get/Public/Music%20Zen%20Garden.mp3?w=AADFd6IXiQm8udbdkcEfzwgdZPGD7ARv875Ub2kW9WL3dQ"
+          }).jPlayer("play");
+          var click = document.ontouchstart === undefined ? 'click' : 'touchstart';
+          var kickoff = function () {
+            $("#jquery_jplayer_1").jPlayer("play");
+            document.documentElement.removeEventListener(click, kickoff, true);
+          };
+          document.documentElement.addEventListener(click, kickoff, true);
+        },
+        loop: true,
+        swfPath: "/js"
+      });
+    
+
+
+
+
+	</script>
+</head>
+<body id="tree">
+
+
+
+	<div id="timer"> </div>
+	<input id="press" type="submit" value="Change BG">
+<div id="sudokuboard">
+
+	  <div id="jquery_jplayer_1"></div>
+	<div class="largesection">
+		<div class="smallsection"><img src="one.png"></div>
+		<div class="smallsection"><img src="two.png"></div>
+		<div class="smallsection"><img src="three.png"></div>
+		<div class="smallsection"><img src="four.png"></div>
+		<div class="smallsection"><img src="five.png"></div>
+		<div class="smallsection"><img src="six.png"></div>
+		<div class="smallsection"><img src="seven.png"></div>
+		<div class="smallsection"><img src="eight.png"></div>
+		<div class="smallsection"><img src="nine.png"></div>
+	</div>
+
+
+	<div class="largesection" id="grid2">
+		<div class="smallsection"><img src="one.png"></div>
+		<div class="smallsection"><img src="two.png"></div>
+		<div class="smallsection"><img src="three.png"></div>
+		<div class="smallsection"><img src="four.png"></div>
+		<div class="smallsection"><img src="five.png"></div>
+		<div class="smallsection"><img src="six.png"></div>
+		<div class="smallsection"><img src="seven.png"></div>
+		<div class="smallsection"><img src="eight.png"></div>
+		<div class="smallsection"><img src="nine.png"></div>
+	</div>
+
+	<div class="largesection" id="grid3">
+		<div class="smallsection"><img src="one.png"></div>
+		<div class="smallsection"><img src="two.png"></div>
+		<div class="smallsection"><img src="three.png"></div>
+		<div class="smallsection"><img src="four.png"></div>
+		<div class="smallsection"><img src="five.png"></div>
+		<div class="smallsection"><img src="six.png"></div>
+		<div class="smallsection"><img src="seven.png"></div>
+		<div class="smallsection"><img src="eight.png"></div>
+		<div class="smallsection"><img src="nine.png"></div>
+	</div>
+
+		<div class="largesection" id="grid4">
+		<div class="smallsection"><img src="one.png"></div>
+		<div class="smallsection"><img src="two.png"></div>
+		<div class="smallsection"><img src="three.png"></div>
+		<div class="smallsection"><img src="four.png"></div>
+		<div class="smallsection"><img src="five.png"></div>
+		<div class="smallsection"><img src="six.png"></div>
+		<div class="smallsection"><img src="seven.png"></div>
+		<div class="smallsection"><img src="eight.png"></div>
+		<div class="smallsection"><img src="nine.png"></div>
+	</div>
+
+		<div class="largesection" id="grid5">
+		<div class="smallsection"><img src="one.png"></div>
+		<div class="smallsection"><img src="two.png"></div>
+		<div class="smallsection"><img src="three.png"></div>
+		<div class="smallsection"><img src="four.png"></div>
+		<div class="smallsection"><img src="five.png"></div>
+		<div class="smallsection"><img src="six.png"></div>
+		<div class="smallsection"><img src="seven.png"></div>
+		<div class="smallsection"><img src="eight.png"></div>
+		<div class="smallsection"><img src="nine.png"></div>
+	</div>
+
+		<div class="largesection" id="grid6">
+		<div class="smallsection"><img src="one.png"></div>
+		<div class="smallsection"><img src="two.png"></div>
+		<div class="smallsection"><img src="three.png"></div>
+		<div class="smallsection"><img src="four.png"></div>
+		<div class="smallsection"><img src="five.png"></div>
+		<div class="smallsection"><img src="six.png"></div>
+		<div class="smallsection"><img src="seven.png"></div>
+		<div class="smallsection"><img src="eight.png"></div>
+		<div class="smallsection"><img src="nine.png"></div>
+	</div>
+
+			<div class="largesection" id="grid7">
+		<div class="smallsection"><img src="one.png"></div>
+		<div class="smallsection"><img src="two.png"></div>
+		<div class="smallsection"><img src="three.png"></div>
+		<div class="smallsection"><img src="four.png"></div>
+		<div class="smallsection"><img src="five.png"></div>
+		<div class="smallsection"><img src="six.png"></div>
+		<div class="smallsection"><img src="seven.png"></div>
+		<div class="smallsection"><img src="eight.png"></div>
+		<div class="smallsection"><img src="nine.png"></div>
+	</div>
+
+	<div class="largesection" id="grid8">
+		<div class="smallsection"><img src="one.png"></div>
+		<div class="smallsection"><img src="two.png"></div>
+		<div class="smallsection"><img src="three.png"></div>
+		<div class="smallsection"><img src="four.png"></div>
+		<div class="smallsection"><img src="five.png"></div>
+		<div class="smallsection"><img src="six.png"></div>
+		<div class="smallsection"><img src="seven.png"></div>
+		<div class="smallsection"><img src="eight.png"></div>
+		<div class="smallsection"><img src="nine.png"></div>
+	</div>
+
+	<div class="largesection" id="grid9">
+		<div class="smallsection"><img src="one.png"></div>
+		<div class="smallsection"><img src="two.png"></div>
+		<div class="smallsection"><img src="three.png"></div>
+		<div class="smallsection"><img src="four.png"></div>
+		<div class="smallsection"><img src="five.png"></div>
+		<div class="smallsection"><img src="six.png"></div>
+		<div class="smallsection"><img src="seven.png"></div>
+		<div class="smallsection"><img src="eight.png"></div>
+		<div class="smallsection"><img src="nine.png"></div>
+	</div>
+
+</body>
+</html>

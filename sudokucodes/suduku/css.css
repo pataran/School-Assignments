@@ -1,0 +1,99 @@
+
+#timer{
+	margin-top:-5;
+	margin-right:120px;
+	float:right;
+	background-color:black;
+	width:200px;
+	height:50px;
+	color:white;
+
+	font-size:48px;
+}	
+	
+
+ #tree {
+
+	background-image:url('background1.png');
+	
+
+}
+#bird{
+	background-image:url('background2.png');
+	
+}
+#sudokuboard
+{
+	width:1600px;
+	height:1300px;
+	background-image:url('sudukugrid.png');
+}
+
+.largesection{
+	margin-top:210px;
+	float:left;
+	margin-left:450px;
+	width:370px;
+	height:280px;
+	background-image:url('bluesquare.png');
+	}
+#grid2{
+margin-left:0px;
+background-image:none;
+
+}
+
+#grid3{
+margin-left:-5;
+}
+#grid4{
+	margin-top:10px;
+	float:left;
+	margin-left:450px;
+	background-image:none;
+}
+
+#grid5{
+	margin-top:0px;
+	float:left;
+	margin-left:0px;
+
+	
+}
+#grid6{
+	margin-top:10px;
+	float:left;
+	margin-left:0px;
+	background-image:none;
+}
+#grid6{
+	margin-top:10px;
+	float:left;
+	margin-left:0px;
+	background-image:none;
+}
+#grid7{
+	margin-left:450px;
+	margin-top:-10px;
+	float:left;
+}
+#grid8{
+	margin-left:0px;
+	margin-top:-10px;
+	float:left;
+	background-image:none;
+}
+#grid9{
+	margin-left:0px;
+	margin-top:-10px;
+	float:left;
+
+	
+}
+.smallsection{
+	padding-left:8px;
+	float:left;
+	
+	width:110px;
+	height:95px
+}

@@ -1,0 +1,16 @@
+<html>
+<header>
+<script>
+</script>
+</header>
+<body>
+<div id="background">
+<div id="sudokuboard"></div>
+</div>
+
+
+
+
+
+</body>
+</html>

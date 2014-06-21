@@ -1,0 +1,148 @@
+.bold{
+	float:left;
+	font-size:26px;
+	margin-top:15px;
+	margin-left:25px;
+}
+
+
+#wrapper{
+	background-color:black;
+	height:3000px;
+	width:2050px;
+}
+
+	#header{
+		background-color:white;
+		height:138px;
+		width:2050px;
+	}
+
+		#header img{
+			float:left;
+		}
+
+			#header p{
+				font-weight:bold;
+				font-size:36px;
+				float:right;
+				margin-right:30px;
+				margin-top:60px;
+				width:600px;
+			}
+
+	#navbar{
+	background-color:gray;
+	height:138px;
+	width:2050px;
+	border-left-color:white;
+	border-top-color:black;
+	border-top-style:solid;
+	border-top-width:1px;
+}	
+	#navbar ul{
+		margin-top:0px;
+	}
+	#navbar ul li{
+		border-left-width:1px;
+		border-left-style:1px;
+		border-right-color:white;
+		border-right-style:solid;
+		border-right-width:1px;
+		font-size:24px;
+		font-weight:bold;
+		float:left;
+		list-style:none;
+		padding-left:40px;
+		padding-right:40px;
+		padding-top:20px;
+		padding-bottom:18px;
+	}
+
+		#shed{
+		margin-left:60px;
+		margin-top:35px;
+		border-width:11px;
+		border-color:white;
+		border-style:solid;
+	}
+
+	#ppc{
+		background-color:gray;
+		float:right;
+		height:532px;
+		width:1120px;
+		margin-right:40px;
+		margin-top:35px;
+
+	}
+
+		#ppcyellowbar{
+			background-color:orange;
+			height:60px;
+			width:1120px;
+		}
+
+			#ppc #ppclub{
+				font-size:32px;
+				font-weight:bold;
+				color:white;
+			}
+
+				#ppc p{
+					color:white;
+					font-size:24px;
+				}
+
+					#ppc span{
+						font-size:24px;
+						font-weight:bold;
+						color:white;
+
+					}
+#ppcsmall{
+	float:left;
+	margin-top:10px;
+	margin-left:75px;
+}
+	#caption{
+		color:yellow;
+		float:left;
+		font-size:20px;
+		margin-left:30px;
+		padding-right:1000px;
+	}
+
+.hornbuckle{
+	height:500px;
+	width:450px;
+	background-color:white;
+	float:left;
+	margin-left:56px;
+
+}
+
+	.yellowbar{
+		background-color:orange;
+		height:60px;
+		width:450px;
+	}
+
+		.hornbuckle p{
+			font-size:24px;
+			margin-left:15px;
+			margin-right:15px;
+		}
+			.button{
+				background-color:orange;
+				border-width:4px;
+				border-style:solid;
+				border-color:black;
+				border-radius:12px;
+				color:blue;
+				width:170px;
+				height:45px;
+				float:right;
+				margin-right:30px;
+			}
+			

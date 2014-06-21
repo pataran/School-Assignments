@@ -1,0 +1,57 @@
+<!doctype html>
+<!-- Jason Norgaar,Patrick Gandolfo, Philip Tran, Ali Abou-zahr, Christ Kaundart -->
+<html>
+	<head>
+	 	<title>Website Test</title>
+	 	<meta name=description content="Hello! This survey will change your LIFE!tm">
+	 	<meta charset="utf-8">
+	 	<link rel="stylesheet" href="css/groupcss.css">
+	 	<script src="my_javascript_library.js"></script>
+	</head>
+	<body>	
+		<div id = "mainwrapper">
+			<div id="topBanner">
+				<img src="logo.png" height="80" width="80"id="logoImage">
+			<div class="linkContainer">
+				<ul class="bannerLinks">
+					<li><a href="http://www.dimensions3.com">List stuff</a></li>
+					<li class="border"><a href="http://www.dimensions3.com">List stuff</a></li>
+					<li class="border"><a href="http://www.dimensions3.com">List stuff</a></li>
+					<li class="border"><a href="http://www.dimensions3.com">List stuff</a></li>
+					<li class="border"><a href="http://www.dimensions3.com">List stuff</a></li>
+				</ul>
+			</div>
+		</div>
+			<div id="sidebarwrapper"
+			<div id="sidebar">
+			<input type="text"><img src="search.png" alt="anthing">
+				<div id="numberbox"></div>
+			</div>				
+			<div id="main"><h2>Online Marketing</h2>
+			<h4 class="blue">Listen For Success: An interview with business community builder sarah robinson</h4>
+			<h6>September 13, 2012 Dex One Contributer</h6>
+			<img src="finelady.png" alt="anything">
+				   <p>Acclaimed business boach, author and business community builder Sarah Robinson sat down with Marketing Matters to discuss the Dex One wevinar Listen for Success:Reputation,Community & Your Business</p>
+				   <ul id="tag" class="blue" >
+					   <li class="small">Tags</li>
+					   <li class="small">Brand Building</li>
+					   <li class="small">Community</li>
+					   <li class="small">Dex One Events</li>
+					   <li class="small">Online Marketing</li>
+				   </ul>
+				<ul id="list">
+					<li class="medium">Online Presence</li>
+					<li class="medium">Reputation And Community</li>
+					<li class="medium">Reputation Management</li>
+				</ul>
+					<p class="bold" class="blue">Why Your Online Reputation Makes A Difference</p>
+					<p >July17, 2012 Dex One Contributor</p>
+					<p>According to a 2012 survey by SteelHouse, an e-commerce company, 98 percent of shoppers said that online customer reviews have a major influence on their decision to purchase a product or service. The survey also found that 72 percent of consumers claimed they always read reviews before making a purchase. Most respondents read up to 10 reviews about a product or service before making a decision. So it's more important than ever to monitor what's being said about your business online.</p>
+			</div>
+			<div class="clear"></div>	
+			</div>		
+	    </div>
+
+				
+	</body>
+</html>

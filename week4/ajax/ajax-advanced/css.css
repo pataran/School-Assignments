@@ -1,0 +1,24 @@
+
+
+.send_message_inputs{
+	float:right;
+	
+	height:20px;
+}
+	.send_message_inputs input{
+		float:left;
+		
+		
+	}
+
+.message_container{
+	border-width:1px;
+	border-color:black;
+	border-style:solid;
+	display:block;
+	height:400px;
+	margin-top:40px;
+	margin-left:400px;
+	width:400px;
+}
+	

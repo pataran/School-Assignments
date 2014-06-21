@@ -1,0 +1,135 @@
+<!doctype html>
+
+<html>
+		<head>
+	 	<title>Website Test</title>
+	 	<meta name=description content="Hello! This survey will change your LIFE!tm">
+	 	<meta charset="utf-8">
+	 	<link rel="stylesheet" href="css/css.css">
+	 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+	 
+
+	 	<script type="text/JavaScript">
+    	      $(document).ready(function(){
+    	      	 $('#homedd').hide();
+    	      	 $('#moreinfo').hide();
+    	      	 $(".back").hide();
+
+    	      	// $('#homebar').hide();
+				$("#home").hover(
+				  function () {
+				    
+				    $('#homedd').slideDown();
+				  });
+
+				 $('#homedd').mouseout(function() 
+				 {
+  					$('#homedd').slideUp();
+				 });
+				
+
+				$('#homedd').slideUp();
+
+				$( ".button" ).click(function() {
+				 
+				  $('.hornbuckle').fadeOut();
+				  $('#ppcsmall').hide();
+				  $('#caption').hide();
+				  $( '#moreinfo' ).fadeIn();
+				  $(".back").show();
+
+				});
+
+
+				$( ".back" ).click(function() {
+				 
+				  $('.hornbuckle').fadeIn();
+				  $('#ppcsmall').fadeIn();
+				  $('#caption').fadeIn();
+				  $( '#moreinfo' ).fadeOut();
+				  $(".back").fadeOut();
+
+				});
+
+      });	
+		</script>
+
+
+	</head>
+
+	<body>	
+		<div id ="wrapper">
+			<div id="header">	
+				<img src="topbanner.png" alt="no">
+				<p> CALL TOLL FREE 1-800-772-5823 </p>
+			</div>
+
+			<div id="navbar">
+			
+				
+				<ul>
+					<li id="home">HOME<div id="homedd">
+					<ul id="homebar">
+						<li class="homemenu">elsewhere</li>
+						<li class="homemenu">elsewhere</li>
+						<li class="homemenu">elsewhere</li>
+					</ul>
+				</div>	
+					</li>
+					<li>MARKET SEGMENTS</li>
+					<li>SERVICES</li>
+					<li>PRODUCTS</li>
+					<li>PROMOTIONS</li>
+					<li>MARKET AREA </li>
+					<li>MARKET INFORMATION</li>
+				</ul>
+			
+				
+			</div>
+				<img id="shed" src="shed.png" alt="no">
+				<div id="ppc"><div id="ppcyellowbar"><span class="bold">ABOUT PPC LUBRICANTS</span></div>
+					<p id="ppclub">A Heritage of Specializing in Lubricants</p>
+					<p>For over 40 years, <span>PPC Lubricants</span> has earned a solid reputation for offering high quality products and services that improve your business. How? By providng customer retention programs/prducts for installers and products and services that increase equipment life and enhance the efficiency of all equipment whether it be <span>Automotive,Heavy Duty Commerical, or Industrial</span> in its application.</p>
+					<p>At PPC Lubricants, we take tremendous pride in providing the highest level of Service. When you call our toll free numbers you will be greeted by a staff that is knowledgeable and experienced in the various lubricants that we carry. Each customer service representative receives specific training on the latest advancements in lubrication technology including changing equipment and OEM requiements.</p>
+				</div>
+					<img id="ppcsmall" src="ppc.png" alt="no">	
+					<p id="caption"> PPC now has Bulk Delivery/Squirt Fill capabilities for DEF</p>
+
+
+					<div class="hornbuckle">
+							<div class="yellowbar"><span class="bold">AUTOMOTIVE</span></div>
+							<img src="automotive.png" alt="its not working" height="200" width="450">
+							<p>The Automotive Market requires a different set of tools in order to succeed. PPC Lubricants offers various programs that are customized to each custom in...</p>
+							<button type="button" class="button">READ MORE...</button>
+						</div>
+					
+					<div class="hornbuckle">
+							<div class="yellowbar"><span class="bold">COMMERCIAL</span></div>
+							<img src="commercial.png" alt="its not working" height="200" width="450">
+							<p>PPC Lubricants has been in business of supporting the Commerical market for over 40 years! The most important thing we have learned is that...</p>
+							<button type="button" class="button">READ MORE...</button>
+							
+					    </div>
+						<div class="hornbuckle">
+								<div class="yellowbar"><span class="bold">INDUSTRIAL</span></div>
+								<img src="industrial.png" alt="its not working" height="200" width="450">
+								<p>Regardless of the industrial market segment that you operate in: Metal, Forestry, Gas and Power Production, Foods, P lastics or almost any other field, your lubricant...</p>
+								<button type="button" class="button">READ MORE...</button>
+						   </div>
+					
+					<div class="hornbuckle">
+							<div class="yellowbar"><span class="bold">DIESEL EXHAUST FLUID</span></div>
+							<img src="diesel.png" alt="its not working" height="200" width="450">
+							<p>As governmental regulations on emissions from diesel engines become more severe. it has forced vehicle manufactureres to evaluate and adopt new technologies in order to...</p>
+							<button type="button" class="button">READ MORE...</button>
+						</div> 
+
+						<div id="moreinfo"><div class="yellowbar"><span class="bold">Extra Info</span></div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan velit ac tellus mollis, nec bibendum mi posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut vel libero dictum, adipiscing ipsum quis, cursus turpis. Etiam tellus risus, tempus vel feugiat et, posuere ac metus. Suspendisse suscipit vulputate ornare. Maecenas lobortis non nunc ac convallis. Aliquam a accumsan diam. Pellentesque non tortor sem. Maecenas aliquam erat ut nisi gravida, sed ultricies erat convallis. Donec quis vulputate tellus, quis tincidunt odio. Nunc imperdiet mauris in faucibus egestas. Suspendisse quis consectetur augue. Praesent elementum non mauris in dapibus.
+
+In volutpat nisl et porta porttitor. Aliquam erat volutpat. Nam id pellentesque sapien, at laoreet purus. Donec quis magna pharetra lorem pulvinar ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean sed justo eget metus vehicula mattis. Duis tempus dolor lorem, eu pretium lectus luctus eget. Cras condimentum vitae massa vitae cursus. Mauris eget lacus pulvinar, porttitor dui sed, porta elit. Suspendisse ac diam velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras laoreet pharetra pulvinar. Nam nunc orci, adipiscing id eros vitae, rhoncus condimentum nulla.</div></p><button type="button" class="back">READ MORE...</button>
+				
+	    </div>	
+
+	</body>
+</html>

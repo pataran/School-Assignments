@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>todo</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var todo_list = $("#todo-list");
+        var todo_count = 0;
+        var todo_complete = 0;
+        var todo_open = 0;
+        $(document).on("click", ".toggle", function(){
+          var list_item = $(this).parent();
+          if($(this).is(":checked"))
+            list_item.addClass("completed");
+          else
+            list_item.removeClass("completed");
+          updateTodoCount();
+        });
+        $(document).on("click", "#toggle-all", function(){
+
+          if($(this).attr("data-status") == "all-completed")
+          {
+            todo_list.find("li").removeClass("completed");
+            todo_list.find(".toggle").prop("checked", false);
+            $(this).attr("data-status", "");
+          }
+
+          else{
+            todo_list.find("li").addClass("completed");
+            todo_list.find(".toggle").prop("checked", true);
+            $(this).attr("data-status", "all-completed");
+          }
+
+          updateTodoCount();
+
+        });
+        $(document).on("click", "#clear-completed", function(){
+          todo_list.find(".completed").remove();
+          updateTodoCount();
+        });
+        $(document).on("keydown", "#new-todo", function(e){
+          if(e.keyCode == 13){
+            var new_todo = '<li><input type="checkbox" class="toggle"><label>';
+            new_todo += $("#new-todo").val();
+            new_todo += '</label><button class="destroy"></button></li>';
+            $("#new-todo").val('');
+            todo_list.prepend(new_todo);
+            updateTodoCount();
+          }             
+        });
+        $(document).on("click", ".destroy", function(){
+          $($(this).parent()).remove();
+          updateTodoCount();
+        });
+        $(document).on("dblclick", "#todo-list li label", function(){
+          var old_todo = $(this).text();
+          var edit_todo = "<input type='text' class='edit' value='"+old_todo+"'>";
+          $($(this).parent()).addClass("editing");
+          $($(this).parent()).prepend(edit_todo);
+          $($(this).parent()).find(".edit").focus();
+          $(this).remove();
+        });
+        $(document).on("keydown", ".edit", function(e){
+          if(e.keyCode == 13){
+            $($(this).parent()).removeClass("editing");
+            var updated_todo = "<label>" + $(this).val() + "</label>";
+            $(this).replaceWith(updated_todo);
+          }
+        });
+        $(document).on("click", "#filters a", function(e){
+          e.preventDefault();
+          var filter = $(this).attr("href");
+          $("#filters").find("a").removeClass("selected");
+          $(this).addClass("selected");
+          if(filter == "completed"){
+            todo_list.find("li").hide();
+            todo_list.find(".completed").show();
+          }
+          else if(filter == "active"){
+            todo_list.find('li').show();
+            todo_list.find(".completed").hide();
+          }
+          else{
+            todo_list.find("li").show();
+          }
+        });
+
+        //this will not be broken
+        function updateTodoCount(){
+          todo_count = todo_list.find("li").length;
+          todo_complete = todo_list.find(".completed").length;
+          todo_open = todo_count - todo_complete;
+          $("#count-open").text(todo_open);
+          $("#count-complete").text(todo_complete);
+        }
+        updateTodoCount();
+      });
+    </script>
+  </head>
+  <body>
+      <section id="todoapp">
+        <header id="header">
+          <h1>todos</h1>
+          <input type="text" id="new-todo" placeholder="What needs to be done?" />
+        </header>
+
+        <section id="main">
+          <ul id="todo-list">
+            <li>
+              <input type="checkbox" class="toggle">
+              <label>Learn how to debug jQuery</label><button class="destroy"></button>
+            </li>
+            <li>
+              <input type="checkbox" class="toggle">
+              <label>Pass your yellow belt exam</label><button class="destroy"></button>
+            </li>
+            <li>
+              <input type="checkbox" class="toggle">
+              <label>...</label><button class="destroy"></button>
+            </li>
+            <li>
+              <input type="checkbox" class="toggle">
+              <label>Profit!</label><button class="destroy"></button>
+            </li>
+          </ul>
+          <input type="checkbox" id="toggle-all" data-status>
+        </section>
+
+        <footer id="footer">
+          <span id="todo-count">
+            <strong id="count-open">0</strong> todos left
+          </span>
+          <ul id="filters">
+            <li>
+              <a href="all" class="selected">All</a>
+            </li>
+            <li>
+              <a href="active">Active</a>
+            </li>
+            <li>
+              <a href="completed">Completed</a>
+            </li>
+          </ul>
+
+          <button id="clear-completed">
+            Clear completed (<span id="count-complete">0</span>)
+          </button>
+        </footer>
+      </section>
+
+      <footer id="info">
+        <p>Double-click to edit a todo</p>
+      </footer>
+
+  </body>
+</html>

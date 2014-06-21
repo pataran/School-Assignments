@@ -1,0 +1,248 @@
+.button{
+	border-radius:6px;
+	width:225px;
+	height:33px;
+	background-color:black;
+	margin-top:-8px;
+	font-weight:bold;
+}
+#button1{
+	background-color:blue;
+	color:white;
+	font-size:17px;
+
+}
+#button2{
+	background-color:orange;
+	color:white;
+	font-size:17px;
+}
+.buttontxt{
+	margin-left:36px;
+	margin-top:32px;
+}
+.buttontxt2{
+	margin-left:55px;
+}
+.sidebutton{
+	width:220px;
+	height:32px;
+	font-weight:bold;
+	border-radius:4px;
+	margin-bottom:10px;
+}
+.phone{
+	margin-top:10px;
+	float:left;
+	display:inline;
+
+}
+.blue{
+	color:blue;	
+	font-weight:bold;
+	font-size:20px;
+
+}
+#home{
+	float:left;
+	clear:both;
+}
+.ppc{
+text-decoration:none;
+float:left;
+margin-top:15px;
+}
+.red{
+	color:red;
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:-10px;	
+}
+
+.bold{
+	font-weight:bold;
+}
+.small{
+	font-size:10px;
+}
+.square{
+list-style-type: square;	
+}
+#word{
+	font-size:20px;
+	margin-bottom:20px;
+}
+#wrapper{
+	height:1000px;
+	width:1000px;
+}
+#head{
+	border-top-width:1px;
+	border-top-style:solid;
+	height:102px;
+	width:1000px;
+	background-color:white;
+	display:block;
+}
+	#toptabs{
+		margin-right:10%;
+		border-left-width:1px;
+		border-right-width:1px;
+		border-bottom-width:1px;
+		border-style:solid;
+		border-color:gray;
+		border-top-style:none;
+		border-bottom-right-radius:5px;
+		border-bottom-left-radius:5px;
+		float:right;
+		height:25px;
+		width:370px;
+		display:inline-block;			
+}
+	#toptabs ul{
+		margin-top:0px;
+		margin-bottom:0px;
+		padding-left:20px;
+		list-style-type: none;
+	}
+	#toptabs li{
+		display:inline-block;
+		font-size:15px;
+		border-right-width:1px;
+		border-right-style:solid;
+		border-right-gray;
+		padding-right:4px;
+
+	}
+#head2{
+	height:59px;
+	width:1000px;
+}
+#number{
+	width:170px;
+	margin-bottom:px;
+	display:inline-block;
+	float:right;
+	
+}
+#number ul{
+	list-style-type: none;
+}
+#sidebarwrapper{
+	display:inline-block;
+	height:800px;	
+	width:230px;
+}
+#rulerstextcontainer{
+	margin-top:20px;
+	background-color:#f1f1f1;
+	width:208px;
+	border-width:1px;
+	border-style:solid;
+	border-color:grey;
+	border-bottom:none;	
+}
+#sidecontent{
+
+	margin-top:60px;
+	height:230px;	
+	width:230px;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+}
+
+#sidecontentmiddle{
+	height:225px;	
+	width:230px;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+}
+.moveleft{
+	float: left;
+	height:225px;	
+	width:200px;
+}
+#middlewrapper{
+	display:inline-block;
+	height:1000px;
+	width:750px;
+}
+
+#upperbar{
+	display:block;
+	height:80px;
+	width:798px;
+	margin-bottom:5px;
+}
+
+#uppermid{
+	height:63px;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color:gray;
+}
+
+#middle{
+	background-color:white;
+	height:325px;	
+}
+#rulerbutton{
+	height:25px;
+	width:160px;
+	background-color:blue;
+	color:white;
+	border-radius:4px;
+	margin-left:25px;
+}
+
+#midad{
+	background-color:white;
+	border-width:5px;
+	border-style:solid;
+	border-color:blue;
+	height:137px;
+	width:650px;
+	overflow:hidden;
+}
+#profits{
+	margin-top:10px;
+	font-weight:bold;
+	font-size:20px;
+	color:blue;
+	margin-bottom:-15px;
+	
+}
+#adtext{
+	margin-top:-7px;
+	height:150px;
+	width:571px;
+	float:right;
+
+}
+
+#adbutton{
+	width:197px;
+	height:37px;
+	border-radius:6px;
+	color:white;
+	background-color:orange;
+	font-size:16px;
+
+}
+#credit{
+	margin-top: 0px;
+	margin-left:25px;
+}
+#Automation{
+	color:blue;	
+}
+.midformat{
+	display:inline-block;
+	height:225px;
+	width:725px;	
+}
+#arrows{
+	color:white;
+	font-weight:bold;
+	font-size:14px;
+}

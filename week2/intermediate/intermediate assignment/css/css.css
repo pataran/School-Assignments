@@ -1,0 +1,32 @@
+#wrapper{
+	height:600px;
+	width:1300px;
+	background-color:white;
+}
+
+#demoncontainer{
+	margin-left:20%;
+	margin-right:20%;
+}
+.margin{
+	display:block;
+	float:left;
+	margin-top:40px;
+	margin-left:20px;
+	margin-right:20px;
+	margin-bottom:20px;		
+}
+#tableheader{
+	border-width:5px
+	border-color:blue;
+}
+#box{
+	width:200px;
+	height:200px;
+}
+#row > tr{
+	width:200px;
+}
+table{
+	border-width:1px;
+}

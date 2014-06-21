@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en_US">
+<head>
+	<meta charset="UTF-8">
+	<title>User Logic</title>
+</head>
+<body>
+
+	<div id="wrapper">
+	<form id="user_login" action="process.php" method="post">
+	<label>Email</label>
+	<input type="text" name=email">
+	<label>Password</label>
+	<input type="password" name="password">
+	<input type="submit" value="login">
+	</form>
+	</div>
+
+</body>
+</html>

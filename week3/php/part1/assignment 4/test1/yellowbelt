@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html>
+		<head>
+	 	<title>Website Test</title>
+	 	<meta name=description content="Hello! This survey will change your LIFE!tm">
+	 	<meta charset="utf-8">
+	 	<link rel="stylesheet" href="css/css.css">
+	 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/JavaScript">
+ 	$(document).ready(function(){
+ 		$('#large').click(function() {
+ 			$('#large').fadeOut();
+ 		});
+
+
+ 	});
+		</script>
+		</head>
+
+		<body>
+			<div id="header">
+				<div id="rightheadcontainer">
+				<ul id="login"  style="list-style:none">
+
+					<li><a href="www.google.com" a>Site Map</a></li>
+					<li><a href="www.google.com" a>Sign In</a></li>
+				</ul>
+					</div>	
+									<div id="searchfield">
+										<button type="button">Search</button><input type="text" name="fname">
+									</div>
+					
+				<img src="logo.png" alt="some_text" height="150" width="100">
+
+			</div>
+			<div id="menu">
+				<ul style="list-style:none">
+					<li>HOME</li>
+					<li>ABOUT</li>
+					<li>ARTICLES</li>
+					<li>BROADCASTS</li>
+					<li>NEWSLETTER</li>
+					<li>CONTACT US</li>
+					<li>RESOURCES</li>
+					<li>DONATE</li>
+				</ul>	
+			</div>
+
+			<div id="leftcontent">
+						<div id="leftuppercontent">
+							<div id="upperleftcontentheader"><b id="leftheadbold">Who we are</b></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed arcu massa. Nullam adipiscing, orci ac ultrices convallis, neque tellus viverra turpis, a interdum tellus ipsum nec ipsum. Nulla facilisi. Aenean justo ipsum, ullamcorper nec massa quis, vestibulum malesuada enim. Nullam ornare libero est, at egestas sapien venenatis non. Aliquam ullamcorper, libero aliquet commodo vehicula, sapien turpis interdum mi,</p> 
+							<button class="leftbuttons" type="button">OUR STAFF</button>
+							<button class="leftbuttons" type="button">OUR MISSION</button>
+
+						</div>
+						<div id="bottomleftcontent">
+							<img src="sidebar.png" alt="some_text">
+						<div id="bottomleftcontentmini"><b id="april">April 2013</b><br><p id="april2">Grant Us Peace</p></div>
+
+						</div>
+			</div>	
+				<div id="middlecontent">
+					<img id="large"src="large1.jpeg" alt="some_text">
+					<p id="resources">Resources for Families</p>
+
+					<div class="familycontainer1" ><img src="small1.jpg" alt="some_text">
+						<ul class="family"  style="list-style:none">
+							<li>Children</li>
+							<li>Adolescents</li>
+							<li>Adult Children</li>
+						</ul>
+					</div>
+						<div id="familycontainer2" ><img src="small2.jpg" alt="some_text">
+						<ul class="family"  style="list-style:none">
+							<li>Marriage</li>
+							<li>Family</li>
+							<li>Singles</li>
+							<li>Friendships</li>
+						</ul>
+					</div>
+					<!-- <div id="family"><img  src="small2.jpg" alt="some_text"></div> -->
+
+				</div>	
+			<div id="rightcontent">
+				<div id="rightupper">
+						<p class="rightupper">What's new?</p>
+						<div id="rightupperminibox">
+							<p>Cadence 91<br>
+							Cadene 91 is a poetic prayer based on Psalm 91. It poignantly depicts the physical, emotional & spiritual trials of war and how tthe great love and security of Jesus Christ will not fail.</p>
+							<button class="minibutton" type="button">Read More...</button>
+						</div>
+						<div id="rightlowerbox">
+							<p> Ever wanted to<br> ask a personal<br> question but felt<br> uncomforable asking face<br> to face?</p><br>
+							<span id="ask">click here to ask:</span><br>
+							<button id="rosa" type="button">Dear Rosa</button>
+						</div>
+				</div>
+			</div>	
+		</body>
+
+
+
+
+
+</html>
